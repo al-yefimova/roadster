@@ -1,0 +1,52 @@
+body {
+	background-image: url(img/main/background.png);
+	margin:0 auto;
+	width:960px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .logo {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#menu {
+
+}
+
+#menu nav ul li {
+	display: inline-table;
+} 
+
+#main {
+	width:700px;
+	float:left;
+	background-image:url(img/main/blank.gif);
+	font-size:13px;
+	line-height:21px;
+}
+	main {
+		padding: 34px 39px 0px 33px;
+	}
+		main h1 {
+			color: #1e6edb;
+			font-size: 28px;
+		}
+
+#sidebar {
+	width:237px;
+	float:right;
+}
+
+section ul li {
+	list-style-type: none;
+	color: blue;
+}
+
+footer {
+	float:left;
+}
+	footer .icons li{
+		list-style-type:none;
+		display:inline-table;
+	}
