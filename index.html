@@ -14,7 +14,7 @@
         </div>
         <div id="menu">
             <div class="enter">
-                <a href="html5-boilerplate-4.3.0/ ">Вход </a><span>или</span> <a href="">Регистрация</a>
+                <a href="#">Вход </a><span>или</span> <a href="">Регистрация</a>
             </div>
             <nav>
                 <ul>
@@ -32,7 +32,7 @@
         <div id="main">
         <main>
             <h1>BMW запустит в серию гибридный спорткар</h1>
-            <p><time>01.02.2010 17:53</time>, Редакция</p>
+            <div class="edit"><p><time>01.02.2010 17:53</time>, Редакция</p></div>
             <p>В ближайшие три года компания BMW планирует запустить в серийное производство 
 концептуальный спорткар Vision EfficientDynamics, который был впервые представлен на 
 моторшоу во Франкфурте осенью прошлого года. Как сообщает издание Inside Line со 
@@ -51,25 +51,20 @@
 оси) и роботизированной коробки передач с двумя сцеплениями. С нуля до ста километров 
 в час прототип способен разогнаться за 4,8 секунды. Максимальная скорость машины 
 ограничена электроникой на отметке 250 километров в час.</p>
-            <hr>
+            <div class="tables">
             <table>
-                <tr>
-                    <td>3 liter per km</td>
-                    <td>164 kw</td>
-                </tr>
-                <tr>
-                    <td>0 -100 km/h (62 mph)</td>
-                    <td>5.0 sec</td>
-                </tr>
-                <tr>
-                    <td>Top speed</td>
-                    <td>250 km/h (155 mph)</td>
-                </tr>
-                <tr>
-                    <td>Weigh</td>
-                    <td>1,630 kg – 3,600 lbs</td>
-                </tr>
-            </table>
+                    <tr class="item"><td>3 liter per 100km</td><td>164kw</td></tr>
+                    <tr class="item"><td>0-100 km/h (62 m ph)</td><td>5.0 sec</td></tr>
+                    <tr class="item"><td>Top speed</td><td>250 km/h (155 mph)</td></tr>
+                    <tr class="item"><td>Weigh</td><td>1,630 kg - 3,600 lbs</td></tr>
+                </table>
+            <ul>
+                <li>3-cylinder 1.5 liter petrol engine</li>
+                <li>electric motor – 96kw</li>
+                <li>Battery Charge Time – 1.45 hrs</li>
+                <li>Luggage storage – 100 liters</li>
+            </ul>
+            </div>
             <p>Этот автомобиль станет второй моделью немецкого производителя, после городского 
 электрокара i3, который будет выпускаться под суббрендом "i", созданным специально для 
 продажи экологически чистых машин. Ожидается, что производство нового спорткара 
@@ -80,9 +75,11 @@
 американским партнером SG Carbon. Новинка будет оснащаться гибридной силовой 
 установкой, сочетающей в себе трехцилиндровый бензиновый мотор объемом 1,5 литра, 
 170-сильный электродвигатель и литий-ионный аккумуляторы.</p>
-            <p>Фотографии 8/24</p>
-            <img src="" alt=""/>
-            <p>© Пресс-служба "BMW"</p>
+            <div class="photo">
+                <h2>Фотографии 8/24</h2>
+                <img src="img/main/photo.jpg" alt="photo"/>
+            </div>
+            <div class="press">© Пресс-служба "BMW"</div>
         </main>
         </div>
         <!--END MAIN PART-->
@@ -90,53 +87,70 @@
         <div id="sidebar">
         <section>
             <img src="img/sidebar/banner.jpg" alt="banner"/>
-            <input type="button" value="Читают">
-            <a href="html5-boilerplate-4.3.0/ ">Комментируют</a>
-            <ul>
-                <li><a href="html5-boilerplate-4.3.0/ ">Кроссовер Mazda CX-5 будут 
-собирать в России</a><input type="button" value="10"></li>
-                <li><a href="html5-boilerplate-4.3.0/ ">На самых старых автомобилях в 
-России ездят на Камчатке</a></li>
-                <li><a href="html5-boilerplate-4.3.0/ ">Берни Экклстоун решил жениться</a></li>
-                <li><a href="html5-boilerplate-4.3.0/ ">Citroen привезет в Россию 
-"трекинговую" версию C3 Picasso</a></li>
+            <div class="block">
+                <a href="#" class="read">Читают</a>
+                <a href="html5-boilerplate-4.3.0/ " class="comment">Комментируют</a>
+            </div>
+            <ul class="news">
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">Кроссовер Mazda CX-5 будут 
+собирать в России</a><input type="image" value="22" src="img/sidebar/comment.gif"></li><time class="date">27.04 11:24</time>
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">На самых старых автомобилях в 
+России ездят на Камчатке</a></li><time class="date">27.04 11:24</time>
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">Берни Экклстоун решил жениться</a></li><time class="date">27.04 11:24</time>
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">Citroen привезет в Россию 
+"трекинговую" версию C3 Picasso</a></li><time class="date">27.04 11:24</time>
             </ul>
-            <p>Ответьте на вопрос</p>
+            <div id="form">
+            <h2>Ответьте на вопрос</h2>
             <p>Какая марка маши вызывает у 
 вас наибольшее доверие с 
 точки зрения безопасности?</p>
-            <ul>
+    <!--        <ul>
                 <input type="radio" value="BMW">BMW<br>
                 <input type="radio" value="Mercedes-Benz">Mercedes-Benz<br>
                 <input type="radio" value="Volvo">Volvo<br>
+            </ul>-->
+            <form action="#" method="post">
+                <label><input type="radio" name="car" value="BMW"> BMW</label>
+                <label><input type="radio" name="car" value="Mercedes-Benz"> Mercedes-Benz</label>
+                <label><input type="radio" name="car" value="Volvo"> Volvo</label>
+                <div class="response">
+                    <input type="image" name="Ответить" src="img/sidebar/button.png" />
+                </div>
+        </form>
+        <!--    <div class="response">
+                <input type="button" value="Ответить">
+            </div>-->
+            </div>
+            <div class="info">
+            <h2>Новинки</h2>
+            <input type="image" value=">" src="img/sidebar/right_arrow.png"/>
+            <input type="image" value="<" src="img/sidebar/left_arrow.png"/>
+            <img src="img/sidebar/car.png" alt="car">
+            <ul class="news">
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">Aston Martin завершит выпуск 
+суперкара DBS спецсерией</a></li><time class="date">27.04 15:51</time>
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">Lamborghini выбрала еще одно 
+название для будущих моделей</a></li><time class="date">27.04 15:51</time>
+                <li class="news"><a href="html5-boilerplate-4.3.0/ ">Mazda CX-9 нового поколения 
+появится в 2013 году</a><input id="comment_22" type="image" value="22" src="img/sidebar/comment_22.png"/></li><time class="date">27.04 15:51</time>
             </ul>
-            <input type="button" value="Ответить">
-            <p>Новинки</p>
-            <input type="button" value="<">
-            <input type="button" value=">">
-            <ul>
-                <li><a href="html5-boilerplate-4.3.0/ ">Aston Martin завершит выпуск 
-суперкара DBS спецсерией</a><time>27.04 15:51</time></li>
-                <li><a href="html5-boilerplate-4.3.0/ ">Lamborghini выбрала еще одно 
-название для будущих моделей</a><time>27.04 15:51</time></li>
-                <li><a href="html5-boilerplate-4.3.0/ ">Mazda CX-9 нового поколения 
-появится в 2013 году</a><time>27.04 15:51</time><input type="button" value="22"></li>
-            </ul>
+            </div>
         </section>
         </div>
         <!--END SIDEBAR-->
         <!--FOOTER-->
         <footer>
-        <p>© 2012 "Ua Web Challenge"</p>
+        <p class="icons">© 2012 "Ua Web Challenge"</p>
             <ul class="icons">
-                <li><a href=""><img src="img/footer/facebook.gif" alt="Facebook"/></a></li>
-                <li><a href=""><img src="img/footer/twitter.gif" alt="Twitter"/></a></li>
-                <li><a href=""><img src="img/footer/linkedin.gif" alt="LinkedIn"/></a></li>
-                <li><a href=""><img src="img/footer/google.gif" alt="Google+"/></a></li>
-                <li><a href=""><img src="img/footer/youtube.gif" alt="YouTube"/></a></li>
+                <li><a href="http://facebook.com"><img src="img/footer/facebook.gif" alt="Facebook"/></a></li>
+                <li><a href="http://twitter.com"><img src="img/footer/twitter.gif" alt="Twitter"/></a></li>
+                <li><a href="http://linkedin.com"><img src="img/footer/linkedin.gif" alt="LinkedIn"/></a></li>
+                <li><a href="http://google.com"><img src="img/footer/google.gif" alt="Google+"/></a></li>
+                <li><a href="http://youtube.com"><img src="img/footer/youtube.gif" alt="YouTube"/></a></li>
                 <li><a href=""><img src="img/footer/rss.gif" alt="RSS"/></a></li>
             </ul>
-        <p>Дизайн от xeoart 2012</p>   
+        <img class="icons" src="img/footer/xeo.gif" alt="design"/>
         </footer>
     	<!--END FOOTER-->
     </body>

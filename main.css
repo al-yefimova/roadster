@@ -4,49 +4,261 @@ body {
 	width:960px;
     font-family: 'Open Sans', sans-serif;
 }
-
-header .logo {
-	text-align: center;
-	margin: 0 auto;
+/*--HEADER--*/
+header {
+	position:relative;
+	margin-bottom:70px;
 }
-
+	header .logo {
+		margin: 0 auto;  
+	}
 #menu {
-
+	position:absolute;
+	display:inline-table;
 }
-
-#menu nav ul li {
-	display: inline-table;
-} 
-
+	.enter {
+		float:left;
+		position: relative;
+		display:inline-block;
+		bottom:37px;
+		font-size: 13px;
+		left:25px;
+	}
+		.enter a {
+			border-bottom:1px dotted #aaacae;
+		}
+			.enter a:hover {
+				text-decoration: underline;
+				color: red;
+			}
+				.enter span {
+					color:#acb5bb;
+				}
+		#menu nav {
+			float:right;
+			position: relative;
+			left:55px;
+			bottom:60px;
+		}
+			#menu nav ul li {
+				display: inline-table;
+				margin-right: 40px;
+				font-size: 19px;
+	        }
+	        #menu a {
+				text-decoration: none;
+				color: #4a5c68;
+			}
+				#menu nav a:hover {
+					text-decoration:underline;
+					color:red;
+				}
+					#menu a:active, #menu a:focus {
+						text-decoration: none;
+						color:black;
+						border-bottom:3px solid #7fd0ff;
+						padding:10px;
+					}
+/*--END HEADER--*/
+/*--MAIN--*/
 #main {
 	width:700px;
 	float:left;
-	background-image:url(img/main/blank.gif);
+	background-image:url(img/main/blank.gif); 
 	font-size:13px;
 	line-height:21px;
+	box-shadow: 0 0 7px #dfe4e8;
 }
 	main {
 		padding: 34px 39px 0px 33px;
 	}
 		main h1 {
+			text-decoration: underline;
 			color: #1e6edb;
-			font-size: 28px;
+			font-size: 27px;
+			font-weight:600;
+			margin-bottom: 16px;
 		}
-
+			.edit {
+				margin-bottom: 47px;
+				font-size: 11px;
+				color:#acb5bb;
+			}
+				main p {
+					margin-bottom: 57px;
+				}
+					blockquote {
+						margin: 48px 0px 56px 0px;
+					}
+	.tables {
+		margin: 55px 0px 66px 0px;
+		position: relative;
+	}
+		.tables ul {
+			position:absolute;
+		    bottom: 43px;
+			right:60px;
+		}
+	table {
+		border-top:2px black solid;
+		margin:56px 0px 56px 0px;
+		color:#4f4f4f;
+	}
+		table td {
+			padding:5px 20px;
+		}
+			table .item {
+				margin:20px;
+				border-top:0.08em solid #e8edf0;
+			}
+	main ul li {
+		font-size: 12px;
+	}
+	.photo img {
+		margin: 21px 0px 21px 0px;
+	}
+	.press {
+		margin-bottom: 22px;
+		font-size: 11px;
+		color: #8c8c89;
+	}
+/*--END MAIN--*/
+/*--SIDEBAR--*/
 #sidebar {
 	width:237px;
 	float:right;
 }
-
-section ul li {
-	list-style-type: none;
-	color: blue;
+section .block {
+	position: relative;
+	margin-top: 29px;
 }
-
-footer {
-	float:left;
-}
-	footer .icons li{
-		list-style-type:none;
-		display:inline-table;
+	section .read {
+		display:block;
+		width: 100px;
+		line-height: 1.8;
+		text-align: center;
+		text-decoration: none;
+		background-image: url(img/sidebar/4angle_white.gif);
+		color: black;
 	}
+		section .comment {
+			position: relative;
+			float:right;
+			bottom: 27px;
+			right:15px;
+			font-size: 15px;
+			color: #5a6a74;
+			text-decoration: none;
+			border-bottom: 1px dotted #5a6a74;
+		}
+section ul {
+	position: relative;
+	float: left;
+	right:37px;
+	bottom:44px;
+}
+	section ul li {
+		list-style-type: none;
+		color: blue;
+	}
+		section .news li {
+			position: relative;
+			padding-top: 24px;
+		}
+			section .news li a {
+				color:#1e6edb;
+				font-size: 13px; 
+			}
+				section .news li a:hover, section .news li a:focus {
+					color: red;
+				}
+					.date {   
+						font-size: 10px;
+						color: #ababab;
+						padding-top: 5px;
+					}
+						.news input {
+							position: relative;
+							top:8px;
+							left:3px;
+						}
+section form label {
+	display: list-item;
+	list-style-type: none;
+	font-size: 13px;
+	margin:13px 0px 0px 0px;
+	border-top: 1px dotted gray;
+	padding: 13px 0px 0px 8px;
+}
+	form label:hover {
+		color: blue;
+		cursor: pointer;
+	}
+		#form p {
+				font-size: 13px;
+				margin-left: 8px;
+			}
+				#form h2 {
+					margin-left: 8px;
+					font-size: 19px;
+				}
+					.response {
+						position: relative; 
+						width: 237px;
+						height: 70px;
+						background-color: #edf3f6;
+						margin-top: 10px;
+						margin-bottom: 65px;
+					}
+						.response input {
+							position: relative;
+							margin:18px 65px;
+					}
+	}
+	}
+section .info {
+	position: relative;
+}
+	.info h2 {  /*Новинки*/
+		font-size: 24px;
+		font-weight: 500;
+	}
+		.info input {  /*arrows above car pic, aren't active in opera*/
+			display: inline-table;
+			position: relative;
+			float: right;
+			bottom: 45px;
+		}
+			.info img {   /*car picture in news block*/
+				position: relative;
+				bottom:35px;
+			}
+					.info li #comment_22 {  /*comment*/
+						display: block;
+						position: absolute;
+						top: 52px;
+						left:135px;
+					}
+/*--END SIDEBAR--*/
+/*--FOOTER--*/
+footer {  
+	position: relative;
+	float: left;
+	width: 700px;
+	padding:100px 0px 76px 0px;
+}
+	footer .icons {   /*check firefox*/
+		position: relative;
+		vertical-align: middle;
+		display: inline-block;
+		padding:0px 0px 0px 57px;
+	}
+		footer .icons li{
+			list-style-type:none;
+			display:inline-table;
+			padding: 6.5px 6.5px;
+		}
+			footer p {
+				font-size: 11px;
+			}
+/*--END FOOTER--*/
